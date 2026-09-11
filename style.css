@@ -18,3 +18,7 @@
 .menu a:active {
   border: 2px inset #ffffff;
 }
+
+body {
+  cursor: url("images/cursor.png"), auto;
+}
