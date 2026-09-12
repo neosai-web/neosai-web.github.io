@@ -43,6 +43,8 @@ a {
   flex: 1; /* 残りの画面幅をすべて使う */
   display: flex;
   flex-direction: column; /* ★ここが重要！中身を上から下に縦並びにする */
+  align-items: center; /* ★要素（画像や文章ブロック）を中央に寄せる */
+  text-align: center;  /* ★テキストを中央揃えにする */
   padding: 20px;
   box-sizing: border-box;
 }
