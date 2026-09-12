@@ -2,25 +2,28 @@ a {
   font-size: 50px !important;
 }
 
-
-.tabs {
+/* 画面を左右に分割する設定 */
+.site-container {
   display: flex;
-  gap: 3px;
-  margin-bottom: 20px;
+  min-height: 100vh;
 }
 
-.tabs a {
-  display: block;
-  padding: 8px 18px;
-  background: #dcdcdc;
-  color: #000;
-  text-decoration: none;
-  border: 1px solid #888;
+/* 左メニューのスタイル */
+.sidebar {
+  width: 200px; /* 左メニューの幅 */
+  background-color: #f0f0f0;
+  border-right: 2px solid #808080;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-.tabs a:hover {
-  background: #eeeeee;
+/* 右側メインコンテンツのスタイル */
+.main-content {
+  flex: 1;
+  padding: 200px 20px 20px 20px; /* 内容の部分 */
 }
+
+
 
 body {
   /* 画像のパス指定 + バックアップ用の pointer/auto を記載 */
