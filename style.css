@@ -49,6 +49,17 @@ a {
   box-sizing: border-box;
 }
 
+
+/* 写真ページの画像や、プロフィール画像を中央寄せにする */
+.main-content img {
+  display: block;       /* 画像をブロック要素にしてマージンを効かせる */
+  margin-left: auto;    /* 左側の余白を自動計算 */
+  margin-right: auto;   /* 右側の余白を自動計算 */
+  max-width: 100%;      /* スマホではみ出さないように保護 */
+  height: auto;
+}
+
+
 /* メインコンテンツの中にある各要素の横幅制限 */
 .main-content h1, 
 .main-content h3, 
