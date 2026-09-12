@@ -69,6 +69,13 @@ a {
   margin-bottom: 10px;
 }
 
+/* 左メニューの各リンク文字サイズ調整 */
+.heisei-tabs .tab {
+  font-size: 16px; /* ← ここでお好みの大きさに調整（例: 14px, 16px, 18px など） */
+  display: block;  /* 縦並びのクリック範囲を広げる */
+  padding: 6px 10px;
+}
+
 
 
 body {
