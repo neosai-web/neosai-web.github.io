@@ -76,6 +76,14 @@ a {
   padding: 6px 10px;
 }
 
+/* サイドバー内の画像サイズを枠幅に自動フィットさせる */
+.sidebar-img {
+  width: 100%;        /* サイドバーの横幅にピッタリ合わせる */
+  max-width: 130px;   /* 大きくなりすぎない上限サイズ */
+  height: auto;       /* 縦横比を崩さず自動調整（潰れ防止） */
+  display: block;
+  margin: 0 auto 10px auto; /* 中央寄せ ＋ 下に10pxの隙間 */
+}
 
 
 body {
