@@ -23,5 +23,6 @@ a {
 }
 
 body {
-  cursor: url("images/cursor.jpg"), auto;
+  /* 画像のパス指定 + バックアップ用の pointer/auto を記載 */
+  cursor: url('cursor.png'), auto;
 }
