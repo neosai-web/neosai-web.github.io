@@ -23,6 +23,39 @@ a {
   padding: 200px 20px 20px 20px; /* 内容の部分 */
 }
 
+/* 画面全体：左にメニュー、右にメインコンテンツを横並びにする */
+.site-container {
+  display: flex;
+  flex-direction: row; /* メニューとメイン画面は横並び */
+  min-height: 100vh;
+}
+
+/* 左側のサイドバー（メニュー） */
+.sidebar {
+  width: 150px; /* メニューの横幅を固定 */
+  flex-shrink: 0; /* メニューがつぶれないようにする */
+  border-right: 1px solid #ccc; /* 境界線（お好みで） */
+  padding: 10px;
+}
+
+/* 右側のメインコンテンツ全体：中身を「縦並び」にする */
+.main-content {
+  flex: 1; /* 残りの画面幅をすべて使う */
+  display: flex;
+  flex-direction: column; /* ★ここが重要！中身を上から下に縦並びにする */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* メインコンテンツの中にある各要素の横幅制限 */
+.main-content h1, 
+.main-content h3, 
+.main-content p, 
+.main-content hr {
+  width: 100%; /* 横幅いっぱいに広げて改行させる */
+  margin-bottom: 10px;
+}
+
 
 
 body {
