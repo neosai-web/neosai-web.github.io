@@ -117,3 +117,17 @@ footer {
     border-top: 1px dashed #999;
     padding-top: 5px;
 }
+/* --- ブログ記事一覧などのリスト設定 --- */
+.content-body ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.content-body ul li a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.content-body ul li a:hover {
+    color: #ff0000;
+}
